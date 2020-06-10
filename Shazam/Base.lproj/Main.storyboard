@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="13I-hg-p5c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="Kej-hz-VjI">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="13I-hg-p5c" customClass="PageViewController" customModule="Shazam" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCH-Zc-hLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Teb-ml-C8g">
+            <objects>
+                <viewController storyboardIdentifier="left" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyW-1O-ea7" customClass="ViewController" customModule="Shazam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jZc-KE-hW1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1081" translatesAutoresizingMaskIntoConstraints="NO" id="ESf-OT-ypT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ESf-OT-ypT" secondAttribute="bottom" id="7WV-ux-bNR"/>
+                            <constraint firstItem="ESf-OT-ypT" firstAttribute="leading" secondItem="gJR-Kk-Wqb" secondAttribute="leading" id="8EL-8R-soC"/>
+                            <constraint firstItem="ESf-OT-ypT" firstAttribute="trailing" secondItem="gJR-Kk-Wqb" secondAttribute="trailing" id="DBJ-Sf-89B"/>
+                            <constraint firstItem="ESf-OT-ypT" firstAttribute="top" secondItem="jZc-KE-hW1" secondAttribute="top" id="wI9-Mq-FrZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gJR-Kk-Wqb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AvV-SY-rgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1275.3623188405797" y="375.66964285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hy8-rH-jn2">
+            <objects>
+                <viewController storyboardIdentifier="center" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sWz-NK-Ze0" customClass="ViewController" customModule="Shazam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IqB-cO-Ifc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgoundshazam" translatesAutoresizingMaskIntoConstraints="NO" id="tPI-SX-0On">
+                                <rect key="frame" x="-8" y="0.0" width="422" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjZ-Mb-g9d">
+                                <rect key="frame" x="182" y="504" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" image="camera.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100" scale="large"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6S-09-MWs">
+                                <rect key="frame" x="107" y="266" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="logoshazam"/>
+                                <connections>
+                                    <action selector="shazamPressed:" destination="sWz-NK-Ze0" eventType="touchUpInside" id="gE0-Mw-Q8T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tocca per Shazam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C51-bh-ex8">
+                                <rect key="frame" x="132" y="206" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tieni premuto per attivare  Auto Shazam" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xo-bk-9oN">
+                                <rect key="frame" x="103" y="196" width="214" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UrW-yE-U0t"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hh7-ns-sKC"/>
+                    <connections>
+                        <outlet property="label" destination="C51-bh-ex8" id="myV-q0-Dd1"/>
+                        <outlet property="label2" destination="5Xo-bk-9oN" id="4eu-kc-wZB"/>
+                        <outlet property="photoButton" destination="pjZ-Mb-g9d" id="NZE-VP-ktc"/>
+                        <outlet property="shazamButton" destination="f6S-09-MWs" id="WlT-yk-O1o"/>
+                        <segue destination="odz-mc-a67" kind="show" identifier="resultSegue" id="R6D-NK-rcJ"/>
+                        <segue destination="ake-i6-SPs" kind="show" identifier="notFound" id="qFG-LK-fqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0GZ-k0-dbH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475.36231884057975" y="375.66964285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LGI-TW-WCn">
+            <objects>
+                <viewController id="ake-i6-SPs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mtX-Yn-12Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NESSUN RISULTATO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02P-KZ-juF">
+                                <rect key="frame" x="104" y="408" width="207" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="21"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exclamationmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U09-yf-xhI">
+                                <rect key="frame" x="87" y="236" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Non è stato possibile trovare un risultato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddC-d9-GxU">
+                                <rect key="frame" x="60" y="442" width="308" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.07901442820259845" green="0.087383712291713808" blue="0.094033354895336707" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Iul-7c-SCa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="txP-Qd-2zO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUP-HK-9Mu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1128" y="1085"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="QGc-fk-7R1">
+            <objects>
+                <viewController storyboardIdentifier="result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="odz-mc-a67" customClass="resultViewController" customModule="Shazam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5N6-QA-c1g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPG-VU-wsY">
+                                <rect key="frame" x="37" y="603" width="340" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wwi-cG-Z21">
+                                <rect key="frame" x="17" y="89" width="380" height="475"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-y3-qm1">
+                                <rect key="frame" x="37" y="651" width="340" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.072211636298829415" green="0.079860362138813437" blue="0.0859375" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="8ZH-0v-H4o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w2g-Kl-Ifu"/>
+                    <connections>
+                        <outlet property="artistLabel" destination="vQY-y3-qm1" id="4VI-oi-yJx"/>
+                        <outlet property="resultImage" destination="wwi-cG-Z21" id="pz4-dc-l8a"/>
+                        <outlet property="songLabel" destination="sPG-VU-wsY" id="eP3-uz-X59"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dnd-5L-BST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="1085"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="02l-ks-YDa">
+            <objects>
+                <viewController storyboardIdentifier="right" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PxE-2e-GHy" customClass="ViewController" customModule="Shazam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="right" id="o7a-Zw-745">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1082" translatesAutoresizingMaskIntoConstraints="NO" id="2q6-Vt-iZA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2q6-Vt-iZA" firstAttribute="top" secondItem="o7a-Zw-745" secondAttribute="top" id="8UZ-9S-el8"/>
+                            <constraint firstItem="2q6-Vt-iZA" firstAttribute="centerX" secondItem="Cwm-IN-Czz" secondAttribute="centerX" id="Bgv-AK-eqA"/>
+                            <constraint firstItem="2q6-Vt-iZA" firstAttribute="centerY" secondItem="o7a-Zw-745" secondAttribute="centerY" id="DFT-ag-7Iw"/>
+                            <constraint firstAttribute="bottom" secondItem="2q6-Vt-iZA" secondAttribute="bottom" id="F5v-tE-JJA"/>
+                            <constraint firstItem="2q6-Vt-iZA" firstAttribute="trailing" secondItem="Cwm-IN-Czz" secondAttribute="trailing" id="WCQ-13-SFA"/>
+                            <constraint firstItem="2q6-Vt-iZA" firstAttribute="leading" secondItem="Cwm-IN-Czz" secondAttribute="leading" id="WdU-rG-Rsr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cwm-IN-Czz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lk-Pg-uKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="376"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1081" width="414" height="896"/>
+        <image name="IMG_1082" width="414" height="896"/>
+        <image name="backgoundshazam" width="1020" height="1920"/>
+        <image name="camera.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="exclamationmark.circle" catalog="system" width="64" height="60"/>
+        <image name="logoshazam" width="374" height="374"/>
+    </resources>
+</document>
